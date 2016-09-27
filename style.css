@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  width: 50%;
+  list-style: none;
+}
+
+li > div {
+  text-align: center;
+  width: 100%;
+}
+
+span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+.arrows {
+  width: 50%;
+  margin: 3px auto 3px;
+  background: black;
+  height: 1px;
+  position: relative;
+}
+
+.arrows:before {
+  content: "";
+  border: 4px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color: black;
+  margin-left: -4px;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+}
+
+.arrows:after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: -1px;
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
