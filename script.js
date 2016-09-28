@@ -23,7 +23,7 @@ bTree = pushToBTree(6, false);
 console.log(bTree);
 
 
-// обход бинарного дерева
+// обход бинарного дерева c выводом в html
 var element = document.createElement('ul');
 function walkWithView(tree, ul) {
     for (var j = 0; j < 2; j++) {
@@ -38,6 +38,7 @@ function walkWithView(tree, ul) {
     return ul;
 }
 
+// обход бинарного дерева
 function walk(tree) {
     for (var j = 0; j < 2; j++) {
         if (tree[j]) {
@@ -46,6 +47,7 @@ function walk(tree) {
         }
     }
 }
+
 walk(bTree);
 document.getElementById('main').appendChild(walkWithView(bTree, element));
 
